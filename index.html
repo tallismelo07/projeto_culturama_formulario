@@ -10,9 +10,42 @@
         <h1>Pesquisa Culturama</h1>
     </header>
 
-    
+    <!-- Dados Pessoais -->
+    <section>
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+            <form action="" method="get">
+                <label for="userName">Nome:</label>
+                <input type="text" name="userName" required>
+                <br>
+
+                <label for="userAge">Idade:</label>
+                <input type="number"  name="userAge" min="12" max="100" required>
+                <br>
+
+                <label for="userBirthday">Data de Nascimento:</label>
+                <input type="date"  name="userBirthday">
+                <br>
+
+                <label for="userEmail">Email:</label>
+                <input type="email" name="userEmail" required>
+                <br>
+
+                <label for="userPhoneNumber">Telefone:</label>
+                <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="XX XXXXX-XXXX">
+                <br>
+
+                <label for="userImage">Upload de foto:</label>
+                <input type="file" name="userImage">
+            </form>
+        </fieldset>
 
 
 
+
+
+
+        <button type="submit">Enviar</button>
+    </section>
 </body>
 </html>
