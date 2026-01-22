@@ -10,11 +10,13 @@
         <h1>Pesquisa Culturama</h1>
     </header>
 
-    <!-- Dados Pessoais -->
+    
     <section>
+        <!-- Dados Pessoais -->
+        <form action="" method="get">
         <fieldset>
           <legend>Dados Pessoais</legend>
-            <form action="" method="get">
+            
                 <label for="userName">Nome:</label>
                 <input type="text" name="userName" required>
                 <br>
@@ -37,15 +39,69 @@
 
                 <label for="userImage">Upload de foto:</label>
                 <input type="file" name="userImage">
-            </form>
         </fieldset>
 
+        <!-- Perfil Pessoais -->
 
+        <fieldset>
+          <legend>Perfil </legend>
+               
+                <input type="radio" name="userGender" value="male">
+                <label for="userGender">Masculino</label>
+                <input type="radio" name="userGender" value="female">
+                <label for="userGender">Feminino</label>
+                <input type="radio" name="userGender" value="other">
+                <label for="userGender">Outro</label>
+                <br>
 
+                <label for="userMaritalStatus">Estado Civil:</label>
+                <select name="userMaritalStatus" required>
+                    <option value="">Selecione</option>
+                    <option value="single">Solteiro(a)</option>
+                    <option value="married">Casado(a)</option>
+                    <option value="divorced">Divorciado(a)</option>
+                    <option value="widowed">Viúvo(a)</option>
+                </select>
+                <br>
 
+                <label for="userState">Estado:</label>
+                <select name="userState" required>
+                    <option value="">Selecione</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+                <br>
+                <label for="userCity">Cidade:</label>
+                <input type="text" name="userCity" autocomplete="address-level2" placeholder="Ex.: Fortaleza" >
+             </fieldset>
 
-
-        <button type="submit">Enviar</button>
+             <button type="submit">Enviar</button>
+            </form>
     </section>
 </body>
 </html>
