@@ -14,7 +14,7 @@
     <section>
         <!-- Dados Pessoais -->
         <form action="" method="get">
-        <fieldset>
+        <!-- <fieldset>
           <legend>Dados Pessoais</legend>
             
                 <label for="userName">Nome:</label>
@@ -39,11 +39,10 @@
 
                 <label for="userImage">Upload de foto:</label>
                 <input type="file" name="userImage">
-        </fieldset>
+        </fieldset> -->
 
         <!-- Perfil Pessoais -->
-
-        <fieldset>
+        <!-- <fieldset>
           <legend>Perfil </legend>
                 <p>Genero:</p>
                 <input type="radio" name="userGender" value="male">
@@ -98,10 +97,32 @@
                 <br>
                 <label for="userCity">Cidade:</label>
                 <input type="text" name="userCity" autocomplete="address-level2" placeholder="Ex.: Fortaleza" >
-             </fieldset>
+        </fieldset> -->
 
-             <button type="submit">Enviar</button>
-            </form>
+        <!-- Hábitos Pessoais-->
+        <fieldset>
+            <legend>Habitos</legend>
+
+            <p>Redes Sociais: </p>
+            <input type="checkbox" name="social" value="instagram">
+            <label for="social">Instagram</label>
+            <br>
+
+            <input type="checkbox" name="social" value="facebook">
+            <label for="social">Facebook</label>
+            <br>
+
+            <input type="checkbox" name="social" value="linkedin">
+            <label for="social">LinkedIn</label>
+            <br>
+
+            <input type="checkbox" name="social" value="x-twitter">
+            <label for="social">X (Twitter)</label>
+            <br>
+        </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
     </section>
 </body>
 </html>
